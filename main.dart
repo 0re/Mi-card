@@ -1,4 +1,4 @@
-import 'dart:html';
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -35,6 +36,13 @@ class MyApp extends StatelessWidget {
                     fontSize: 20.0,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
                   ),
                 ),
                 Container(
@@ -62,6 +70,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  color: Colors.white,
                   padding: EdgeInsets.all(10.0),
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                   child: Row(
@@ -70,6 +79,9 @@ class MyApp extends StatelessWidget {
                         Icons.email,
                         color: Colors.teal,
                       ),
+                      SizedBox(
+                        width: 10.0,
+                        ),
                       Text(
                         'Faniyiolabimpe@gmail.com',
                         style: TextStyle(
